@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Marketing Life | Private Enterprise AI Agents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .quiz-step.hidden { display: none; }
+        .gradient-text { background: linear-gradient(90deg, #0033FF, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center border-b border-gray-100">
+        <div class="text-xl font-extrabold tracking-tighter">AI MARKETING <span class="text-blue-600">LIFE</span></div>
+        <div class="hidden md:flex space-x-6 text-sm font-bold uppercase">
+            <a href="#about" class="hover:text-blue-600 transition">About</a>
+            <a href="#quiz" class="hover:text-blue-600 transition">AI Quiz</a>
+            <a href="https://customgpt.ai/?fpr=kateryna-burimenko46" target="_blank" class="text-blue-600 border border-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition">Partner Access</a>
+        </div>
+    </nav>
+
+    <section id="about" class="py-20 px-6 text-center bg-gradient-to-b from-blue-50 to-white">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">
+                Your Data. Your AI. <br><span class="gradient-text">Zero Compromises.</span>
+            </h1>
+            <p class="text-xl text-slate-600 mb-10 leading-relaxed">
+                Most AI tools "steal" your secrets to train their models. We show you how to build <strong>Human-Like AI Agents</strong> using <strong>CustomGPT.ai</strong> — where your data stays private, and your bot stays accurate.
+            </p>
+            <div class="mb-12 overflow-hidden rounded-xl shadow-sm">
+                <a href="https://customgpt.ai/?fpr=kateryna-burimenko46" target="_blank">
+                    <img src="https://d2gdx5nv84sdx2.cloudfront.net/uploads/tw0vc771/marketing_asset/banner/22950/728_x_90__1_.png" alt="CustomGPT Partner" class="mx-auto">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz" class="py-20 px-6 bg-slate-100">
+        <div class="max-w-3xl mx-auto bg-white p-10 rounded-3xl shadow-2xl border border-blue-100">
+            <div id="quiz-header" class="text-center mb-10">
+                <h2 class="text-3xl font-bold">Is Your Business Ready?</h2>
+                <p class="text-gray-500 mt-2">Take this 30-second quiz to find your AI strategy.</p>
+            </div>
+
+            <div id="quiz-container">
+                <div id="step-1" class="quiz-step">
+                    <p class="text-lg font-bold mb-6">1. How important is data privacy for your company's documents?</p>
+                    <div class="grid gap-4">
+                        <button onclick="nextStep(2)" class="text-left p-5 rounded-xl border-2 border-gray-100 hover:border-blue-600 hover:bg-blue-50 transition font-semibold">Critical. Data must not be used for model training.</button>
+                        <button onclick="nextStep(2)" class="text-left p-5 rounded-xl border-2 border-gray-100 hover:border-blue-600 hover:bg-blue-50 transition font-semibold">Important, but not our main concern.</button>
+                    </div>
+                </div>
+
+                <div id="step-2" class="quiz-step hidden">
+                    <p class="text-lg font-bold mb-6">2. What is your primary goal for implementing AI?</p>
+                    <div class="grid gap-4">
+                        <button onclick="nextStep(3)" class="text-left p-5 rounded-xl border-2 border-gray-100 hover:border-blue-600 hover:bg-blue-50 transition font-semibold">Automating Customer Support (Helpdesk).</button>
+                        <button onclick="nextStep(3)" class="text-left p-5 rounded-xl border-2 border-gray-100 hover:border-blue-600 hover:bg-blue-50 transition font-semibold">Internal Knowledge Management.</button>
+                    </div>
+                </div>
+
+                <div id="quiz-result" class="quiz-step hidden text-center">
+                    <div class="mb-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-bold">Recommended: CustomGPT RAG Engine</div>
+                    <h3 class="text-2xl font-bold mb-4">Your Private AI Agent is One Click Away</h3>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Based on your profile, you need a secure, non-training environment. <strong>CustomGPT.ai</strong> is the only tool trusted by <strong>MIT</strong> to deliver this safely.
+                    </p>
+                    
+                    <div class="p-8 bg-blue-50 rounded-2xl border border-blue-200 mb-8">
+                        <p class="text-sm text-blue-800 mb-6 font-medium italic">
+                            "Transparency: By clicking below, you use my official partner link. This supports AI Marketing Life research at no extra cost to you."
+                        </p>
+                        <a href="https://customgpt.ai/?fpr=kateryna-burimenko46" target="_blank" class="bg-blue-600 text-white px-12 py-5 rounded-full font-black text-xl shadow-lg hover:bg-blue-700 hover:scale-105 transition transform inline-block">
+                            GET 7 DAYS FREE TRIAL
+                        </a>
+                    </div>
+                    <img src="https://d2gdx5nv84sdx2.cloudfront.net/uploads/tw0vc771/marketing_asset/banner/22949/336_x_280__1_.png" alt="CustomGPT Features" class="mx-auto rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-gray-400 text-xs">
+        <p>AI MARKETING LIFE &copy; 2026. Powered by CustomGPT RAG Technology.</p>
+    </footer>
+
+    <script>
+        function nextStep(step) {
+            document.querySelectorAll('.quiz-step').forEach(el => el.classList.add('hidden'));
+            document.getElementById('step-' + step).classList.remove('hidden');
+        }
+        function showResult() {
+            document.querySelectorAll('.quiz-step').forEach(el => el.classList.add('hidden'));
+            document.getElementById('quiz-result').classList.remove('hidden');
+            document.getElementById('quiz-header').classList.add('hidden');
+        }
+        // Замість Step 3 показуємо результат
+        let nextStepOrig = nextStep;
+        nextStep = function(step) {
+            if (step === 3) showResult();
+            else nextStepOrig(step);
+        }
+    </script>
+</body>
+</html>
