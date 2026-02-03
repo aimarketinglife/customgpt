@@ -1,128 +1,140 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Marketing Life | Private Enterprise AI Agents</title>
+    <title>AI Marketing Life | Secure Enterprise AI Agents</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .quiz-step.hidden { display: none; }
-        .gradient-text { background: linear-gradient(90deg, #0033FF, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fcfcfd; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(0,0,0,0.05); }
+        .quiz-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .gradient-border { border: 2px solid; border-image: linear-gradient(to right, #2563eb, #7c3aed) 1; }
     </style>
 </head>
-<body class="bg-white text-slate-900">
+<body class="text-slate-900">
 
-    <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center border-b border-gray-100">
-        <div class="text-xl font-extrabold tracking-tighter uppercase">AI Marketing <span class="text-blue-600">Life</span></div>
-        <div class="hidden md:flex items-center space-x-8 text-sm font-bold uppercase">
-            <a href="#quiz" class="hover:text-blue-600 transition">AI Readiness Quiz</a>
-            <a href="mailto:kate@aimarketing.life" class="hover:text-blue-600 transition">Contact</a>
-            <a href="https://customgpt.ai/?fpr=kateryna-burimenko46" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">
-                Partner Trial
-            </a>
+    <nav class="sticky top-0 z-50 glass">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter tracking-tighter flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg"></div>
+                AI MARKETING <span class="text-blue-600 font-medium italic">LIFE</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-semibold text-sm">
+                <a href="#how" class="hover:text-blue-600 transition">How it works</a>
+                <a href="mailto:kate@aimarketing.life" class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:shadow-lg transition">Contact Sales</a>
+            </div>
         </div>
     </nav>
 
-    <section class="py-20 px-6 text-center bg-gradient-to-b from-blue-50 to-white">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight">
-                Your Data. Your AI. <br><span class="gradient-text">Human-Like Precision.</span>
+    <section class="relative pt-20 pb-32 px-6 overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-widest text-blue-600 bg-blue-50 rounded-full uppercase">
+                Enterprise AI Security
+            </div>
+            <h1 class="text-6xl md:text-8xl font-black mb-8 leading-[1.05] tracking-tight">
+                Turn your company data into <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600">Pure Intelligence.</span>
             </h1>
-            <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
-                Stop using public AI that leaks your secrets. Build a <strong>Private AI Agent</strong> that knows your business inside out, without ever training on your data.
+            <p class="text-xl text-slate-500 mb-12 max-w-2xl mx-auto leading-relaxed font-medium">
+                The only private AI agent platform that doesn't train on your data. 10x faster response times, 0% hallucinations.
             </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#quiz" class="bg-slate-900 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-black transition shadow-lg">Start AI Quiz</a>
-                <a href="https://customgpt.ai/?fpr=kateryna-burimenko46" target="_blank" class="bg-white text-blue-600 border-2 border-blue-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition">Get Free Trial</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="quiz" class="py-24 px-6 bg-slate-50">
-        <div class="max-w-3xl mx-auto bg-white p-8 md:p-16 rounded-[2.5rem] shadow-2xl border border-blue-50 relative overflow-hidden">
-            <div id="quiz-header" class="text-center mb-12">
-                <span class="text-blue-600 font-bold uppercase tracking-[0.2em] text-xs">Strategy Builder</span>
-                <h2 class="text-4xl font-black mt-4">Is Your Business Ready for Private AI?</h2>
-            </div>
-
-            <div id="quiz-container">
-                <div id="step-1" class="quiz-step">
-                    <p class="text-xl font-bold mb-8">1. Do you have sensitive documents (PDFs, Data) that must remain 100% private?</p>
-                    <div class="grid gap-4">
-                        <button onclick="nextStep(2)" class="text-left p-6 rounded-2xl border-2 border-gray-100 hover:border-blue-600 hover:bg-blue-50 transition-all duration-300 group">
-                            <span class="block text-lg font-bold group-hover:text-blue-600">Yes, privacy is critical.</span>
-                            <span class="text-sm text-gray-500">Data must not be used for public model training.</span>
-                        </button>
-                        <button onclick="nextStep(2)" class="text-left p-6 rounded-2xl border-2 border-gray-100 hover:border-blue-600 hover:bg-blue-50 transition-all duration-300 group">
-                            <span class="block text-lg font-bold group-hover:text-blue-600">Maybe.</span>
-                            <span class="text-sm text-gray-500">I'm mostly interested in accuracy.</span>
-                        </button>
-                    </div>
-                </div>
-
-                <div id="step-2" class="quiz-step hidden">
-                    <p class="text-xl font-bold mb-8">2. What is your primary business goal?</p>
-                    <div class="grid gap-4">
-                        <button onclick="showResult()" class="text-left p-6 rounded-2xl border-2 border-gray-100 hover:border-blue-600 hover:bg-blue-50 transition-all duration-300">
-                            <span class="block text-lg font-bold">Automated Customer Support (24/7)</span>
-                        </button>
-                        <button onclick="showResult()" class="text-left p-6 rounded-2xl border-2 border-gray-100 hover:border-blue-600 hover:bg-blue-50 transition-all duration-300">
-                            <span class="block text-lg font-bold">Internal Knowledge Management</span>
-                        </button>
-                    </div>
-                </div>
-
-                <div id="quiz-result" class="quiz-step hidden text-center">
-                    <div class="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">✓</div>
-                    <h3 class="text-3xl font-black mb-4">Recommended Strategy: CustomGPT RAG</h3>
-                    <p class="text-gray-600 mb-10 leading-relaxed">
-                        Your profile requires <strong>Enterprise-Grade Security</strong>. We recommend using CustomGPT.ai to build your agents. It's the only platform trusted by MIT for secure, human-like responses.
-                    </p>
-                    
-                    <div class="p-8 bg-blue-600 rounded-3xl text-white mb-8">
-                        <p class="text-sm uppercase tracking-widest font-bold mb-4 opacity-80">Official Partner Offer</p>
-                        <h4 class="text-2xl font-bold mb-6">Claim Your 7-Day Full Access Trial</h4>
-                        <a href="https://customgpt.ai/?fpr=kateryna-burimenko46" target="_blank" class="inline-block bg-white text-blue-600 px-10 py-4 rounded-full font-black text-lg hover:shadow-xl hover:scale-105 transition transform">
-                            START NOW
-                        </a>
-                    </div>
-                    <p class="text-[10px] text-gray-400 uppercase tracking-widest leading-loose">
-                        * Transparency: This is an official affiliate link. By using it, you support AI Marketing Life research and gain priority support.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-16 text-center border-t border-gray-100">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="mb-8">
-                <p class="text-xs uppercase tracking-[0.3em] font-bold text-gray-400 mb-4">Questions? Contact Strategy Team</p>
-                <a href="mailto:kate@aimarketing.life" class="text-2xl font-black text-slate-900 hover:text-blue-600 transition">
-                    kate@aimarketing.life
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#quiz" class="w-full sm:w-auto bg-blue-600 text-white px-12 py-5 rounded-2xl font-bold text-lg hover:bg-blue-700 hover:-translate-y-1 transition shadow-2xl shadow-blue-200">
+                    Build Your Agent
                 </a>
+                <div class="flex items-center gap-3 text-sm font-bold text-slate-400 px-6">
+                    <span class="flex -space-x-2">
+                        <div class="w-8 h-8 rounded-full bg-slate-200 border-2 border-white"></div>
+                        <div class="w-8 h-8 rounded-full bg-slate-300 border-2 border-white"></div>
+                    </span>
+                    Trusted by 5,000+ Teams
+                </div>
             </div>
-            <div class="flex justify-center space-x-6 mb-8 opacity-20">
-                <span class="font-black text-xl italic">MIT Trusted</span>
-                <span class="font-black text-xl italic">Enterprise Grade</span>
+        </div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-blue-50 rounded-full blur-[120px] -z-10 opacity-60"></div>
+    </section>
+
+    <section id="quiz" class="py-24 px-6 bg-slate-900 text-white rounded-[3rem] mx-4 md:mx-10 mb-20">
+        <div class="max-w-4xl mx-auto">
+            <div id="quiz-header" class="mb-16 text-center">
+                <h2 class="text-4xl font-black mb-4 italic">AI Readiness Audit</h2>
+                <p class="text-slate-400">Determine the ROI of private AI for your specific business model.</p>
             </div>
-            <p class="text-gray-400 text-xs tracking-wide uppercase">
-                &copy; 2026 AI MARKETING LIFE. Developed for professional marketers.
-            </p>
+
+            <div id="quiz-box" class="quiz-card bg-slate-800 p-8 md:p-16 rounded-[2rem] border border-slate-700">
+                <div id="q1">
+                    <span class="text-blue-400 font-bold">Step 01/03</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-10">How much time does your team spend searching for info in internal docs/CS logs?</h3>
+                    <div class="grid gap-4">
+                        <button onclick="go(2)" class="text-left p-6 rounded-xl border border-slate-600 hover:border-blue-500 hover:bg-slate-700 transition font-bold text-lg flex justify-between items-center group">
+                            Less than 5 hours/week <span class="opacity-0 group-hover:opacity-100 transition">→</span>
+                        </button>
+                        <button onclick="go(2)" class="text-left p-6 rounded-xl border border-slate-600 hover:border-blue-500 hover:bg-slate-700 transition font-bold text-lg flex justify-between items-center group text-blue-400">
+                            10+ hours/week (Critical bottleneck) <span class="opacity-100 transition">→</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="q2" class="hidden">
+                    <span class="text-blue-400 font-bold">Step 02/03</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-10">What is your primary data source for the AI Agent?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
+                        <div onclick="go(3)" class="p-8 border border-slate-600 rounded-xl cursor-pointer hover:border-blue-500">
+                            <div class="text-3xl mb-4">📄</div>
+                            <span class="font-bold uppercase tracking-widest text-xs">PDF & Spreadsheets</span>
+                        </div>
+                        <div onclick="go(3)" class="p-8 border border-slate-600 rounded-xl cursor-pointer hover:border-blue-500">
+                            <div class="text-3xl mb-4">🌐</div>
+                            <span class="font-bold uppercase tracking-widest text-xs">Help Centers & URLs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="q3" class="hidden">
+                    <span class="text-blue-400 font-bold">Step 03/03</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-10">Security Requirement Level?</h3>
+                    <div class="grid gap-4">
+                        <button onclick="finish()" class="text-left p-6 rounded-xl border border-slate-600 hover:border-blue-500 hover:bg-slate-700 transition font-bold text-lg group">
+                            Standard (Public is fine)
+                        </button>
+                        <button onclick="finish()" class="text-left p-6 rounded-xl border border-blue-500 bg-blue-900/20 transition font-bold text-lg group">
+                            Military-Grade (Data must NOT be trained on)
+                        </button>
+                    </div>
+                </div>
+
+                <div id="res" class="hidden text-center">
+                    <div class="inline-block px-4 py-1 mb-6 text-xs font-black bg-green-500 text-white rounded-full">AUDIT COMPLETE</div>
+                    <h2 class="text-4xl font-black mb-8">Solution: CustomGPT Enterprise RAG</h2>
+                    <p class="text-slate-400 mb-12 text-lg">Based on your input, you can save up to 40% of operational costs by deploying a private RAG agent. This agent will only answer based on YOUR documents.</p>
+                    
+                    <a href="https://customgpt.ai/?fpr=kateryna-burimenko46" target="_blank" class="block w-full bg-white text-slate-900 py-6 rounded-2xl font-black text-xl hover:scale-[1.02] transition">
+                        CLAIM 7-DAY FREE TRIAL
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 text-center text-slate-400 text-xs border-t border-slate-100">
+        <div class="max-w-4xl mx-auto">
+            <p class="mb-4">AI MARKETING LIFE Strategy Team: <a href="mailto:kate@aimarketing.life" class="text-slate-900 font-bold underline">kate@aimarketing.life</a></p>
+            <p>&copy; 2026. Official CustomGPT Affiliate Partner. All data processed via SSL-encryption.</p>
         </div>
     </footer>
 
     <script>
-        function nextStep(step) {
-            document.querySelectorAll('.quiz-step').forEach(el => el.classList.add('hidden'));
-            document.getElementById('step-' + step).classList.remove('hidden');
+        function go(s) {
+            document.getElementById('q1').classList.add('hidden');
+            document.getElementById('q2').classList.add('hidden');
+            document.getElementById('q3').classList.add('hidden');
+            document.getElementById('q'+s).classList.remove('hidden');
         }
-        function showResult() {
-            document.querySelectorAll('.quiz-step').forEach(el => el.classList.add('hidden'));
-            document.getElementById('quiz-result').classList.remove('hidden');
+        function finish() {
+            document.getElementById('q3').classList.add('hidden');
             document.getElementById('quiz-header').classList.add('hidden');
+            document.getElementById('res').classList.remove('hidden');
         }
     </script>
 </body>
