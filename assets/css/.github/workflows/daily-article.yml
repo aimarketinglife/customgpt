@@ -1,0 +1,25 @@
+name: "Daily AI Content Generator"
+on:
+  schedule:
+    - cron: '0 0 * * *' # Запуск щодня о 00:00 [14]
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: "Generate Content with OpenAI"
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          # Скрипт звертається до OpenAI, створює статтю про Case Study MIT 
+          # та зберігає її у папку _posts/ з вашим афіліатним посиланням
+          python scripts/generate_post.py 
+      - name: "Commit changes"
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add.
+          git commit -m "Auto-generated daily article"
+          git push
