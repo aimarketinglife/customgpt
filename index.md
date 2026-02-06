@@ -13,8 +13,8 @@ excerpt: "The premium education hub for US entrepreneurs seeking 10x scalability
 
 Stop losing leads while your team sleeps. Deploy the world's most accurate RAG technology to automate your customer support and sales in minutes.[1, 2]
 
-(https://customgpt.ai/?fpr=kateryna-burimenko46){:.btn.btn--primary.btn--large} 
-(https://customgpt.ai/demo/?fpr=kateryna-burimenko46){:.btn.btn--info.btn--large}
+[Get Started](https://customgpt.ai/?fpr=kateryna-burimenko46){:.btn.btn--primary.btn--large} 
+[Book Demo](https://customgpt.ai/demo/?fpr=kateryna-burimenko46){:.btn.btn--info.btn--large}
 
 ## Why CustomGPT.ai?
 
@@ -24,9 +24,9 @@ Stop losing leads while your team sleeps. Deploy the world's most accurate RAG t
 
 ### Explore Solutions
 
--(https://customgpt.ai/solution/customer-service/?fpr=kateryna-burimenko46): Automate up to 93% of queries instantly.
--(https://customgpt.ai/customer/chatmtc-mit-entrepreneurship/?fpr=kateryna-burimenko46): See how academia uses military-grade AI.
--(https://customgpt.ai/api/?fpr=kateryna-burimenko46): Custom AI agents integrated directly into your workflow.
+- [Automate Your Support](https://customgpt.ai/solution/customer-service/?fpr=kateryna-burimenko46): Handle up to 93% of customer queries automatically.
+- [See Real Case Study](https://customgpt.ai/customer/chatmtc-mit-entrepreneurship/?fpr=kateryna-burimenko46): How MIT Entrepreneurship Center uses military-grade AI.
+- [Integrate with API](https://customgpt.ai/api/?fpr=kateryna-burimenko46): Connect AI agents directly to your systems.
 
 ---
 
