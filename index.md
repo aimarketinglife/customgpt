@@ -8,21 +8,21 @@ header:
   caption: "Enterprise Automation with CustomGPT"
 excerpt: "The premium education hub for US entrepreneurs seeking 10x scalability."
 ---
-Enterprise-Grade AI for Your Business
-Stop losing leads while your team sleeps. Use the same technology trusted by MIT Entrepreneurship Center to automate your customer support and sales.
 
-{% site.affiliate.demo %} {:.btn.btn--primary.btn--large}
+# Enterprise-Grade AI for Your Business
 
-{% site.affiliate.mit_case %} {:.btn.btn--info.btn--large}
+Stop losing leads while your team sleeps. Use the same technology trusted by **MIT Entrepreneurship Center** to automate your customer support and sales.
 
-Why CustomGPT?
-Anti-Hallucination: Only answers based on your business data.
+(https://customgpt.ai/demo/?fpr=kateryna-burimenko46){:.btn.btn--primary.btn--large}
+(https://customgpt.ai/customer/chatmtc-mit-entrepreneurship/?fpr=kateryna-burimenko46){:.btn.btn--info.btn--large}
 
-90+ Languages: Support your global customers instantly.
+## Why CustomGPT?
 
-Zero Training: Your data remains yours and is never used to train public models.
+- **Anti-Hallucination:** Only answers based on your business data.
+- **90+ Languages:** Support your global customers instantly.
+- **Zero Training:** Your data remains yours and is never used to train public models.
 
-Quick Start Solutions
--({% site.affiliate.solutions %})
+### Quick Start Solutions
 
-[Custom AI Agents via API]({% site.affiliate.api %})
+-(https://customgpt.ai/solution/customer-service/?fpr=kateryna-burimenko46)
+- [Custom AI Agents via API](https://customgpt.ai/api/?fpr=kateryna-burimenko46)
