@@ -1,0 +1,28 @@
+---
+---
+// Основні змінні стилю 2026 року
+$background-color: #0B0D10; // True Charcoal [10]
+$text-color: #E9EEF5;
+$primary-color: #40E0FF; // Electric Cyan для кнопок [10]
+$border-color: #273140;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; 
+@import "minimal-mistakes";
+
+// Кастомні покращення
+.btn--primary {
+  background-color: $primary-color!important;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(64, 224, 255, 0.3); // Ефект світіння [12]
+  transition: all 0.3s ease;
+  &:hover {
+    box-shadow: 0 0 25px rgba(64, 224, 255, 0.5);
+    transform: translateY(-2px);
+  }
+}
+
+.masthead {
+  background-color: rgba(11, 13, 16, 0.95);
+  backdrop-filter: blur(10px); // Ефект скляної панелі [13]
+  border-bottom: 1px solid $border-color;
+}
