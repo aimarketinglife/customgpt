@@ -13,8 +13,8 @@ excerpt: "The premium education hub for US entrepreneurs seeking 10x scalability
 
 Stop losing leads while your team sleeps. Use the same technology trusted by **MIT Entrepreneurship Center** to automate your customer support and sales.
 
-(https://customgpt.ai/demo/?fpr=kateryna-burimenko46){:.btn.btn--primary.btn--large}
-(https://customgpt.ai/customer/chatmtc-mit-entrepreneurship/?fpr=kateryna-burimenko46){:.btn.btn--info.btn--large}
+[https://customgpt.ai/demo/?fpr=kateryna-burimenko46]{:.btn.btn--primary.btn--large}
+[https://customgpt.ai/customer/chatmtc-mit-entrepreneurship/?fpr=kateryna-burimenko46]{:.btn.btn--info.btn--large}
 
 ## Why CustomGPT?
 
@@ -24,5 +24,5 @@ Stop losing leads while your team sleeps. Use the same technology trusted by **M
 
 ### Quick Start Solutions
 
--(https://customgpt.ai/solution/customer-service/?fpr=kateryna-burimenko46)
+-[https://customgpt.ai/solution/customer-service/?fpr=kateryna-burimenko46]
 - [Custom AI Agents via API](https://customgpt.ai/api/?fpr=kateryna-burimenko46)
