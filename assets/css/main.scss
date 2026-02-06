@@ -33,3 +33,6 @@ $border-color: #273140;
 .page__footer-copyright a[href*="mademistakes.com"] {
   display: none; /* Повністю приховує посилання на розробників теми */
 }
+.page__footer-copyright {
+  display: none; /* Це повністю приховає напис про Jekyll у футері */
+}
