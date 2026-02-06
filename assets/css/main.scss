@@ -1,20 +1,34 @@
 ---
 ---
-// Основні змінні стилю
+
+// Основні змінні стилю (Mood Mode Dark)
 $background-color: #0B0D10; 
 $primary-color: #40E0FF; 
+$border-color: #273140;
 
 @import "minimal-mistakes/skins/dark";
 @import "minimal-mistakes";
 
-// Приховуємо технічні написи для "дорогого" вигляду
-.page__footer-copyright {
+// Приховуємо технічні написи Jekyll для "дорогого" вигляду
+.page__footer-copyright,.page__footer-follow {
   display: none!important;
 }
 
-// Покращення вигляду кнопок
+// Покращення вигляду кнопок (ефект світіння)
 .btn--primary {
   background-color: $primary-color!important;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(64, 224, 255, 0.3);
+  transition: all 0.3s ease;
+  &:hover {
+    box-shadow: 0 0 25px rgba(64, 224, 255, 0.5);
+    transform: translateY(-2px);
+  }
+}
+
+// Прозорий хедер з ефектом розмиття
+.masthead {
+  background-color: rgba(11, 13, 16, 0.95)!important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid $border-color;
 }
