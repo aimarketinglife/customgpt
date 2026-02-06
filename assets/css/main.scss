@@ -26,3 +26,10 @@ $border-color: #273140;
   backdrop-filter: blur(10px); // Ефект скляної панелі [13]
   border-bottom: 1px solid $border-color;
 }
+.page__footer-follow,.page__footer-copyright {
+  opacity: 0.7; /* Робить текст менш помітним */
+}
+.page__footer-copyright a[href*="jekyllrb.com"], 
+.page__footer-copyright a[href*="mademistakes.com"] {
+  display: none; /* Повністю приховує посилання на розробників теми */
+}
