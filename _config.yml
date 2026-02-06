@@ -3,39 +3,30 @@ subtitle: "Enterprise Automation with CustomGPT"
 description: "Master business automation with CustomGPT.ai. The premium education hub for US entrepreneurs seeking 10x scalability."
 url: "https://aimarketing.life"
 baseurl: ""
-locale: "en_US" # Цільовий ринок - США
+locale: "en_US"
 
 # Тема та плагіни
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark" # Базова темна тема
+minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-include-cache
 
-# Ваші афіліатні посилання для швидкого виклику в статтях
+# Ваші афіліатні посилання
 affiliate:
-  main: "https://customgpt.ai/?fpr=kateryna-burimenko46"
+  platform: "https://customgpt.ai/?fpr=kateryna-burimenko46"
   demo: "https://customgpt.ai/demo/?fpr=kateryna-burimenko46"
   mit_case: "https://customgpt.ai/customer/chatmtc-mit-entrepreneurship/?fpr=kateryna-burimenko46"
   api: "https://customgpt.ai/api/?fpr=kateryna-burimenko46"
   solutions: "https://customgpt.ai/solution/customer-service/?fpr=kateryna-burimenko46"
 
-# Структура освітнього порталу (Колекції) [7, 8]
-collections:
-  academy:
-    output: true
-    permalink: /academy/:path/
-  case-studies:
-    output: true
-    permalink: /case-studies/:path/
-
-# Навігація
+# Навігація в меню
 navigation:
-  - title: "Academy"
-    url: /academy/
-  - title: "MIT Case Study"
-    url: https://customgpt.ai/customer/chatmtc-mit-entrepreneurship/?fpr=kateryna-burimenko46
+  - title: "Get Started"
+    url: "https://customgpt.ai/?fpr=kateryna-burimenko46"
   - title: "Book Demo"
-    url: https://customgpt.ai/demo/?fpr=kateryna-burimenko46
+    url: "https://customgpt.ai/demo/?fpr=kateryna-burimenko46"
+  - title: "MIT Study"
+    url: "https://customgpt.ai/customer/chatmtc-mit-entrepreneurship/?fpr=kateryna-burimenko46"
